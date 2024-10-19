@@ -1,13 +1,13 @@
 class a:
     def method(self):
         print("A class")
-        super().method()
+        # super().method()
         
 
 class b:
     def method(self):
         print("B class")
-        super().method()
+        # super().method()
 
 class c:
     def method(self):
@@ -16,12 +16,12 @@ class c:
 
 class x(a, b):
     def method(self):
-        print("class add a and b")
+        print("class x")
         super().method()
     
 class y(b, c):
     def method(self):
-        print(" add class b and c")
+        print(" class y")
         super().method()
 
 class p(x, y, c):
@@ -31,4 +31,7 @@ class p(x, y, c):
 
 
 newp = p()
-newp.method() 
+# newp.method() 
+print(p.mro())
+
+newp.method()
