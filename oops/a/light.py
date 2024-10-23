@@ -24,3 +24,4 @@ for i in ["red","yello","green"]:
     t1.action()
     print(t1.next_color)
     print("\n")
+    
