@@ -1,4 +1,4 @@
-f1 = open("file\first.txt","w")
+f1 = open("first.txt","w")
 f1.write("It is demo")
 
 
