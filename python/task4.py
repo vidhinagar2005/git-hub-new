@@ -7,4 +7,3 @@ for i in range(2,num):
     print(tmp,end=" ")
     a = b
     b = tmp
-    
