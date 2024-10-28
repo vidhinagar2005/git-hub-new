@@ -1,0 +1,6 @@
+tup = (1,2,3,4,5,6,7,8)
+print(tup)
+print("Max = ",max(tup))
+print("Min = ",min(tup))
+print("Sum = ",sum(tup))
+print("Avg = ",sum(tup)/len(tup))
