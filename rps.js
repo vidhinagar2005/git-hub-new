@@ -13,13 +13,15 @@ const showWin = (userwin,userchoice,comchoice) =>{
         
         user_score++;
         usermodi.innerText = user_score;
-        msg.innerText = `win! your choice ${userchoice} com choice ${comchoice}`;
+        
+        msg.innerText = ` you win! your choice ${userchoice} com choice ${comchoice}`;
         msg.style.backgroundColor = "green";
+        
     }else{
         
         comp_score++;
         compmodi.innerText = comp_score;
-        msg.innerText = `loss! your choice${userchoice} com choice ${comchoice}`;
+        msg.innerText = ` you loss! your choice ${userchoice} com choice ${comchoice}`;
         msg.style.backgroundColor = "red";
     
     }
@@ -33,7 +35,7 @@ const gencomchoice = () =>{
 
 const drawgame = () =>{
     console.log("Draw game");
-    msg.innerText = "Draw Game..";
+    msg.innerText = "Game Draw..";
     msg.style.backgroundColor = "#081b31";
     
 }
