@@ -1,5 +1,5 @@
 class teacher:
-    def __init__(self, id):
+    def __init__(self):
         self.id = 2005
 
     def display(self):

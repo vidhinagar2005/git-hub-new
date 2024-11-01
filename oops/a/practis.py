@@ -1,20 +1,14 @@
-class square:
-    def __init__(self,x):
-        self.x = x
+class mother:
+    def height(self):
+        print("Height = 6 foot ")
 
-    def area(self):
-        print("Area of square = ",self.x * self.x)
+class father:
+    def color(self):
+        print("color fair")
 
-class rectangle(square):
-    def __init__(self,a,b):
-        super().__init__(a)
-        self.b = b
+class child(mother,father):
+    pass
 
-    def area(self):
-        super().area()
-        print("Area of rectangle = ",self.x * self.b)
-
-v = int(input("length = "))
-i = int(input("Breath = "))
-r = rectangle(v,i)
-r.area()
+c1 = child()
+c1.height()
+c1.color()
