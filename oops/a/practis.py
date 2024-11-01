@@ -1,10 +1,11 @@
 class student:
-    def __init__(self,name,age):
+    def setid(self,id):
+        self.id = id
+    def getid(self):
+        return self.id
+    def setname(self, name):
         self.name = name
-        self.age = age
+    def getname(self):
+        return self.name
 
-    def display(self):
-        print(self.name,"\n",self.age)
-
-s1 = student("vidhi",19)
-s1.display()
+    
