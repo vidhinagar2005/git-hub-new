@@ -1,5 +1,6 @@
-let promise = new promise((resolve,reject) =>{
+let promise = new promise(() =>{
     console.log("I am promise");
-    resolve("add");
+    
+    
 
-})
+});
