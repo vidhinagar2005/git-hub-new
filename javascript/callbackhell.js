@@ -1,4 +1,17 @@
-function callback(id){
-    console.log("Id = ",id);
+function getdata(id,getnextdata){
+    setTimeout(() =>{
+        console.log("id = ",id);
+        if(getnextdata){
+            getnextdata();
+        }
+    },2000)
+
+    
+    
 }
-callback(123);
+getdata(123,() =>{
+    getdata(234,() =>{
+        getdata(345);
+    });
+
+    });
