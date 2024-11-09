@@ -1,37 +1,33 @@
-class a:
+class a(object):
     def method(self):
         print("A class")
-        # super().method()
-        
+        super().method()
 
-class b:
+class b(object):
     def method(self):
         print("B class")
-        # super().method()
+        super().method()
 
-class c:
+class c(object):
     def method(self):
-        print(" C class")
+        print("C class")
         super().method()
 
 class x(a, b):
     def method(self):
-        print("class x")
+        print(" X class")
         super().method()
-    
+
 class y(b, c):
     def method(self):
-        print(" class y")
+        print(" Y class")
         super().method()
 
 class p(x, y, c):
     def method(self):
-        print("p class")
+        print(" P class")
         super().method()
 
-
-newp = p()
-# newp.method() 
+ans = p()
 print(p.mro())
-
-newp.method()
+ans.method()
