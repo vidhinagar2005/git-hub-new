@@ -6,7 +6,7 @@ print(list2)
 list3 = list1 + list2
 print(list3)
 
-new_list = [i for i in list3 for x in (0, 1)]
+new_list = [i for i in list3 for x in (0,1)]
 print(new_list)
 
 list_cloning = list3[:]
